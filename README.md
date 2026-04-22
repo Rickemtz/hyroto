@@ -1,6 +1,6 @@
 # hyroto 🌿
 
-Configuración personal de [Hyprland](https://hyprland.org/) para Arch Linux.  
+Configuración personal de [Hyprland](https://hyprland.org/) para debinan 13 Linux.  
 Setup con 3 monitores, animaciones suaves y enfoque en productividad de terminal.
 
 ---
