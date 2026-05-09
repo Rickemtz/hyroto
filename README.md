@@ -1,11 +1,34 @@
+<div align="center">
 # hyroto 🌿
 
 Configuración personal de [Hyprland](https://hyprland.org/) para debinan 13 Linux.  
 Setup con 3 monitores, animaciones suaves y enfoque en productividad de terminal.
+</div>
+
+<div align="center">
+
+![Hyprland](https://img.shields.io/badge/Hyprland-0d1117?style=flat-square&logo=linux&logoColor=00ff99)
+![Arch](https://img.shields.io/badge/Arch%20Linux-0d1117?style=flat-square&logo=archlinux&logoColor=00cc77)
+![Waybar](https://img.shields.io/badge/Waybar-0d1117?style=flat-square&logo=linux&logoColor=33ccff)
+![Kitty](https://img.shields.io/badge/Kitty-0d1117?style=flat-square&logo=linux&logoColor=00ff99)
+
+</div>
 
 ---
 
-## 📸 Setup
+## Wallpapers
+
+<div align="center">
+
+| city.png | cybertux.png | tux.png |
+|---|---|---|
+| ![city](img/city.png) | ![cybertux](img/cybertux.png) | ![tux](img/tux.png) |
+
+</div>
+
+---
+
+## Setup
 
 | Componente | Herramienta |
 |---|---|
@@ -14,95 +37,95 @@ Setup con 3 monitores, animaciones suaves y enfoque en productividad de terminal
 | Launcher | Wofi |
 | Bar | Waybar |
 | Wallpaper | Hyprpaper |
-| File Manager | Thunar / Dolphin |
+| File Manager | Thunar |
 | Browser | Floorp |
 | Screenshots | Flameshot |
 
 ---
 
-## 🖥️ Monitores
+## Monitores
 
-Configuración para triple monitor:
+Setup triple monitor:
 
 ```
-HDMI-A-1 (izquierda, 1920x1080@60) — eDP-1 (centro laptop, 1920x1080@144) — DP-1 (derecha, 1920x1080@60)
+HDMI-A-1  1920x1080 @ 60Hz   →  izquierda
+eDP-1     1920x1080 @ 144Hz  →  centro (laptop)
+DP-1      1920x1080 @ 60Hz   →  derecha
 ```
 
 ---
 
-## ⌨️ Keybinds principales
+## Keybinds
 
-### General
+### Aplicaciones
+
 | Keybind | Acción |
 |---|---|
 | `SUPER + Return` | Terminal (Kitty) |
-| `SUPER + W` | Cerrar ventana |
-| `SUPER + R` | Launcher (Wofi) |
 | `SUPER + D` | Launcher (Wofi) |
-| `SUPER + F` | Fullscreen |
-| `SUPER + V` | Toggle flotante |
-| `SUPER + E` | File manager |
-| `SUPER + SHIFT + F` | Floorp (browser) |
-| `CTRL + Print` | Captura de pantalla (Flameshot) |
-
-### Navegación
-| Keybind | Acción |
-|---|---|
-| `SUPER + ←→↑↓` | Mover foco |
-| `SUPER + Tab` | Siguiente workspace |
-| `SUPER + SHIFT + Tab` | Workspace anterior |
-| `SUPER + 1..0` | Ir a workspace N |
-| `SUPER + SHIFT + 1..0` | Mover ventana a workspace N |
-| `SUPER + U` | Toggle scratchpad |
+| `SUPER + E` | File manager (Thunar) |
+| `SUPER + SHIFT + F` | Browser (Floorp) |
+| `CTRL + ALT + S` | Captura de pantalla (Flameshot) |
 
 ### Ventanas
+
 | Keybind | Acción |
 |---|---|
-| `SUPER + SHIFT + ←→↑↓` | Intercambiar ventanas (tiling) |
-| `SUPER + CTRL + ←→↑↓` | Mover ventana flotante (±20px) |
-| `SUPER + ALT + ←→↑↓` | Redimensionar ventana (±50px) |
+| `SUPER + W` | Cerrar ventana |
+| `SUPER + F` | Fullscreen |
+| `SUPER + A` | Fullscreen (sin decoraciones) |
+| `SUPER + S / V` | Toggle flotante |
+| `SUPER + Q` | Toggle split |
+| `SUPER + ←→↑↓` | Mover foco |
+| `SUPER + SHIFT + ←→↑↓` | Intercambiar ventanas |
+| `SUPER + ALT + ←→↑↓` | Redimensionar (±50px) |
+| `SUPER + CTRL + ←→↑↓` | Mover flotante (±20px) |
+
+### Workspaces
+
+| Keybind | Acción |
+|---|---|
+| `SUPER + 1..0` | Ir a workspace N |
+| `SUPER + SHIFT + 1..0` | Mover ventana a workspace N |
+| `SUPER + Tab` | Siguiente workspace |
+| `SUPER + SHIFT + Tab` | Workspace anterior |
+| `SUPER + U` | Toggle scratchpad |
+| `SUPER + SHIFT + U` | Mover al scratchpad |
 
 ### Sistema
+
 | Keybind | Acción |
 |---|---|
-| `CTRL + SHIFT + ↑` | Subir volumen +5% |
-| `CTRL + SHIFT + ↓` | Bajar volumen -5% |
+| `CTRL + SHIFT + ↑ / ↓` | Volumen +5% / -5% |
 | `CTRL + SHIFT + M` | Mute toggle |
-| `SUPER + CTRL + ALT + →` | Brillo +5% |
-| `SUPER + CTRL + ALT + ←` | Brillo -5% |
+| `SUPER + CTRL + ALT + → / ←` | Brillo +5% / -5% |
 
 ---
 
-## ✨ Look & Feel
-
-- Bordes redondeados: `10px`
-- Gaps: `4px` interior / `8px` exterior
-- Borde activo: gradiente cyan → verde (`rgba(33ccffee) → rgba(00ff99ee)`)
-- Blur habilitado, animaciones con bezier personalizado
-- Layout: Dwindle
-
----
-
-## 📂 Archivos
+## Look & Feel
 
 ```
-~/.config/hypr/
-├── hyprland.conf   # Configuración principal
-└── hyprpaper.conf  # Wallpapers por monitor
+rounding          10px
+gaps_in           4px
+gaps_out          8px
+border_size       2px
+active_border     rgba(33ccffee) → rgba(00ff99ee)  45deg
+blur              enabled  (size 3, passes 1)
+animations        smoothBezier 0.05, 0.9, 0.1, 1.05
+layout            dwindle
 ```
 
 ---
 
-## 🚀 Uso
+## Instalación
 
 ```bash
 git clone https://github.com/Rickemtz/hyroto.git
-cp hyroto/hyprland.conf ~/.config/hypr/
+cp hyroto/hyprland.conf  ~/.config/hypr/
 cp hyroto/hyprpaper.conf ~/.config/hypr/
+cp -r hyroto/img         ~/.config/hypr/
 ```
 
-> Ajusta las secciones de `### MONITORS ###` y rutas de wallpaper en `hyprpaper.conf` según tu hardware.
+> Ajusta la sección `MONITORS` en `hyprland.conf` según tu hardware antes de recargar.
 
 ---
-
-*Erick Martínez — [@Rickemtz](https://github.com/Rickemtz)*
