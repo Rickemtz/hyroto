@@ -1,17 +1,16 @@
 <div align="center">
-# hyroto 🌿
+  <h1>🌿 hyroto</h1>
 
-Configuración personal de [Hyprland](https://hyprland.org/) para debinan 13 Linux.  
-Setup con 3 monitores, animaciones suaves y enfoque en productividad de terminal.
+  Configuración personal de <a href="https://hyprland.org/">Hyprland</a> para Debian 13 Linux.  
+  Setup con 3 monitores, animaciones suaves y enfoque en productividad de terminal.
 </div>
 
 <div align="center">
 
-![Hyprland](https://img.shields.io/badge/Hyprland-0d1117?style=flat-square&logo=linux&logoColor=00ff99)
-![Arch](https://img.shields.io/badge/Arch%20Linux-0d1117?style=flat-square&logo=archlinux&logoColor=00cc77)
-![Waybar](https://img.shields.io/badge/Waybar-0d1117?style=flat-square&logo=linux&logoColor=33ccff)
-![Kitty](https://img.shields.io/badge/Kitty-0d1117?style=flat-square&logo=linux&logoColor=00ff99)
-
+![Hyprland](https://img.shields.io/badge/Hyprland-0d1117?style=flat-square&logo=hyprland&logoColor=58E1FF)
+![Debian](https://img.shields.io/badge/Debian-0d1117?style=flat-square&logo=debian&logoColor=A81D33)
+![Waybar](https://img.shields.io/badge/Waybar-0d1117?style=flat-square&logo=gtk&logoColor=33ccff)
+![Kitty](https://img.shields.io/badge/🐱%20Kitty-0d1117?style=flat-square&logoColor=7EE787)
 </div>
 
 ---
