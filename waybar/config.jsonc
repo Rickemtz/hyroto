@@ -1,0 +1,101 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 32,
+
+  "modules-left": [
+    "custom/workspaces"
+  ],
+  "modules-center": [
+    "clock"
+  ],
+  "modules-right": [
+    "backlight",
+    "cpu",
+    "memory",
+    "network",
+    "bluetooth",
+    "battery",
+    "wireplumber",
+    "custom/power"
+  ],
+
+  "custom/workspaces": {
+    "exec": "~/.config/waybar/scripts/workspaces.sh",
+    "tail": true,
+    "format": "{}",
+    "escape": false,
+    "tooltip": false
+  },
+
+  "backlight": {
+    "device": "intel_backlight",
+    "format": "\uf522 {percent}%",
+    "tooltip": false
+  },
+
+  "cpu": {
+    "format": "\uf2db {usage}%",
+    "tooltip": false
+  },
+
+  "memory": {
+    "format": "\uf538 {used:0.1f}G",
+    "tooltip": false
+  },
+
+  "network": {
+    "format-wifi": "\uf1eb {essid}",
+    "format-ethernet": "\uf6ff {ipaddr}",
+    "format-disconnected": "\uf92b",
+    "tooltip": false,
+    "on-click": "nm-connection-editor"
+  },
+
+  "bluetooth": {
+    "format": "\uf294 {status}",
+    "format-on": "\uf294",
+    "format-off": "\udb80\udc72",
+    "tooltip": false,
+    "on-click": "blueman-manager"
+  },
+
+  "battery": {
+    "format": "{icon} {capacity}%",
+    "format-charging": "\uf0e7 {capacity}%",
+    "format-plugged": "\uf1e6 {capacity}%",
+    "format-alt": "{time} {icon}",
+    "tooltip": false,
+    "format-icons": ["\uf244", "\uf243", "\uf242", "\uf241", "\uf240"]
+  },
+
+  "wireplumber": {
+    "format": "{icon} {volume}%",
+    "format-bluetooth": "\uf294 {volume}%",
+    "format-muted": "\udb81\udd7f",
+    "tooltip": false,
+    "on-click": "pavucontrol",
+    "scroll-step": 5,
+    "format-icons": {
+      "headphones": "\uf025",
+      "handsfree": "\udb80\udece",
+      "headset": "\udb80\udece",
+      "phone": "\uf095",
+      "portable": "\uf095",
+      "car": "\uf1b9",
+      "default": ["\uf026", "\uf027", "\uf028"]
+    }
+  },
+
+  "custom/power": {
+    "format": "\uf011",
+    "tooltip": false,
+    "on-click": "wlogout"
+  },
+
+  "clock": {
+    "format": "\uf017 {:%H:%M}",
+    "tooltip": false
+  }
+}
+
